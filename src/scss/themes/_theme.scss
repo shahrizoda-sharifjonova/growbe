@@ -10,9 +10,10 @@
         outline: none;
     }
 }
-html,
 body{
-    height: 100%;
+    &.hidden{
+        overflow: hidden;
+    }
 }
 .wrapper{
     min-height: 100%;

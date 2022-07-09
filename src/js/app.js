@@ -29,4 +29,15 @@ function myFunction() {
         }
       }
     }
-  }
+}
+
+const menu = document.querySelector('.menu');
+const headerContent = document.querySelector('.header__content');
+const body = document.querySelector('body');
+
+menu.addEventListener('click', (e)=>{
+  headerContent.classList.toggle('active')
+  body.classList.toggle('hidden')
+  menu.classList.toggle('active')
+})
+
