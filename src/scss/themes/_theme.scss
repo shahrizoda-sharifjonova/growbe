@@ -46,7 +46,16 @@ ul, li{
     justify-content: center;
     align-items: center;
     transition: 300ms ease;
+    @include media(992){
+        height: 40px;
+    }
     &:hover{
         background: lighten($color: #F25822, $amount: 5);
     }
+}
+.title{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color: #000000;
 }

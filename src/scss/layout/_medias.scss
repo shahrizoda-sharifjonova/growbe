@@ -1,0 +1,33 @@
+.medias{
+    padding: 100px 0;
+    @include media(768){
+        padding: 50px 0;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+    &__img{
+        width: calc(16.666666% - 40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media(1200){
+            width: calc(33.3333% - 57px);
+        }
+        @include media(768){
+            width: calc(33.3333% - 42px);
+        }
+        @include media(575){
+            width: calc(50% - 15px);
+        }
+        img{
+            @include media(575){
+                width: 125px;
+            }
+        }
+    }
+}

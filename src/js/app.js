@@ -41,3 +41,6 @@ menu.addEventListener('click', (e)=>{
   menu.classList.toggle('active')
 })
 
+gsap.from('.intro__img', {duration: 1.5,  y: '90%', ease: "circ.out"})
+gsap.from('.solution__img', {duration: 1.5,  y: '90%', ease: "circ.out"})
+

@@ -1,0 +1,26 @@
+.solution{
+    background: url(../img/solution-bg.png) center / cover no-repeat;
+    padding: 80px 0;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        max-width: 515px;
+        width: 100%;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #666666;    
+        margin-bottom: 35px;    
+    }
+    &__btn{
+        width: 140px;
+    }
+}
