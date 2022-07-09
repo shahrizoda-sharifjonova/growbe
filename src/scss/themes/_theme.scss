@@ -33,3 +33,19 @@ a{
 ul, li{
     list-style: none;
 }
+.btn{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #F25822;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease;
+    &:hover{
+        background: lighten($color: #F25822, $amount: 5);
+    }
+}
