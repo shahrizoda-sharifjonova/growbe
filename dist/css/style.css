@@ -354,6 +354,36 @@
           transform: translate(-50%, -50%) rotate(45deg);
 }
 
+.intro {
+  position: relative;
+}
+
+.intro__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+}
+
+.intro__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #000000;
+}
+
+.intro__title span {
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;

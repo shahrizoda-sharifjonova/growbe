@@ -1,0 +1,21 @@
+.intro{
+    position: relative;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 80px;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 70px;
+        color: #000000;
+        span{
+            position: relative;
+            &::before{
+                
+            }
+        }
+    }
+}
