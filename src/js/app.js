@@ -41,6 +41,24 @@ menu.addEventListener('click', (e)=>{
   menu.classList.toggle('active')
 })
 
-gsap.from('.intro__img', {duration: 1.5,  y: '90%', ease: "circ.out"})
-gsap.from('.solution__img', {duration: 1.5,  y: '90%', ease: "circ.out"})
+gsap.from('.intro__img', {
+  opacity: 0,
+  duration: 1.5,
+  y: '40%',
+  ease: "back"
+})
+
+gsap.from('.solution__img', {
+  scrollTrigger: ".solution__img",
+  y: 200,
+  duration: 1.5,
+  ease: "back",
+})
+
+gsap.from('.cards__item_inactive', {
+  scrollTrigger: ".cards__item_inactive",
+  y: 200,
+  duration: 1.5,
+  ease: "back",
+})
 

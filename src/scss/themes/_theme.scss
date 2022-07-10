@@ -58,4 +58,8 @@ ul, li{
     font-size: 45px;
     line-height: 53px;
     color: #000000;
+    @include media(768){
+        font-size: 32px;
+        line-height: 38px;
+    }
 }

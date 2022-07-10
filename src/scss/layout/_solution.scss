@@ -1,10 +1,18 @@
 .solution{
     background: url(../img/solution-bg.png) center / cover no-repeat;
     padding: 80px 0;
+    @include media(1200){
+        padding: 50px 0;
+    }
     &__body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include media(1200){
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
     }
     &__content{
         max-width: 515px;
@@ -12,6 +20,9 @@
     }
     &__title{
         margin-bottom: 20px;
+        @include media(1200){
+            text-align: center;
+        }
     }
     &__p{
         font-weight: 400;
@@ -19,8 +30,26 @@
         line-height: 150%;
         color: #666666;    
         margin-bottom: 35px;    
+        @include media(1200){
+            text-align: center;
+        }
+        @include media(768){
+            margin-bottom: 20px;
+        }
     }
     &__btn{
         width: 140px;
+        @include media(1200){
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__img{
+        @include media(768){
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
     }
 }
