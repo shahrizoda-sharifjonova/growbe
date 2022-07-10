@@ -23,6 +23,8 @@
         @include media(992){
             max-width: 370px;
             padding: 30px 20px 20px 20px;
+            background: #FFFFFF;
+            box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
         }
         &.active, &:hover{
             background: #FFFFFF;

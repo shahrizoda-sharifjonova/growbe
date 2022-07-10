@@ -50,15 +50,28 @@ gsap.from('.intro__img', {
 
 gsap.from('.solution__img', {
   scrollTrigger: ".solution__img",
+  opacity: 0,
   y: 200,
   duration: 1.5,
   ease: "back",
 })
 
-gsap.from('.cards__item_inactive', {
-  scrollTrigger: ".cards__item_inactive",
+gsap.from('.cards__item', {
+  scrollTrigger: ".cards__item",
+  opacity: 0,
   y: 200,
   duration: 1.5,
   ease: "back",
+  stagger: .2,
+})
+
+
+gsap.from('.why__item', {
+  scrollTrigger: ".why__item",
+  opacity: 0,
+  y: 200,
+  duration: 1.5,
+  ease: "back",
+  stagger: .2,
 })
 
