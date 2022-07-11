@@ -600,6 +600,123 @@
   visibility: visible;
 }
 
+.possibilities {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 800px;
+}
+
+.possibilities__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  height: 100%;
+}
+
+.possibilities__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.possibilities__img img {
+  width: 100%;
+}
+
+.possibilities__right {
+  max-width: 570px;
+  width: 100%;
+}
+
+.possibilities__title {
+  max-width: 557px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.possibilities__desc {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.possibilities__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  row-gap: 12px;
+}
+
+.possibilities__item {
+  width: 100%;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  padding: 17px 50px 17px 30px;
+}
+
+.possibilities__item.active,
+.possibilities__item:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.possibilities__item-img img {
+  width: 100%;
+}
+
+.possibilities__subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.possibilities__p {
+  font-size: 15px;
+  line-height: 150%;
+  color: #666666;
+}
+
 .intro__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -855,6 +972,21 @@ li {
 }
 
 @media (max-width: 1600px) {
+  .possibilities {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 70px 0;
+  }
+
+  .possibilities__img {
+    position: static;
+  }
+
+  .possibilities__desc {
+    margin-bottom: 35px;
+  }
+
   .intro__content::before {
     width: 40px;
     height: 40px;
@@ -863,6 +995,42 @@ li {
 }
 
 @media (max-width: 1400px) {
+  .possibilities {
+    padding: 50px 0 0 0;
+  }
+
+  .possibilities__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
+
+  .possibilities__img {
+    max-width: 700px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .possibilities__title {
+    text-align: center;
+  }
+
+  .possibilities__desc {
+    text-align: center;
+  }
+
+  .possibilities__item {
+    background: #FFFFFF;
+    -webkit-box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+            box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+  }
+
   .intro__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1116,6 +1284,32 @@ li {
 
   .medias__img img {
     width: 125px;
+  }
+
+  .possibilities__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 12px;
+    padding: 17px;
+  }
+
+  .possibilities__item-img {
+    width: 60px;
+  }
+
+  .possibilities__subtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .possibilities__p {
+    text-align: center;
   }
 }
 
