@@ -80,7 +80,7 @@ gsap.from('.possibilities__item', {
   scrollTrigger: ".possibilities__item",
   opacity: 0,
   x: 200,
-  duration: 1.5,
+  duration: 1,
   ease: "back",
   stagger: .3,
 })
@@ -90,7 +90,7 @@ gsap.from('.possibilities__img', {
   scrollTrigger: ".possibilities__img",
   opacity: 0,
   x: -300,
-  duration: 1.5,
+  duration: 1,
   ease: "circ.out",
 })
 
